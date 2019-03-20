@@ -50,7 +50,7 @@ public class BookActivity extends AppCompatActivity
     }
 
     public void backToMain(View view) {
-        String reply = "I'm back!";
+        String reply = this.mTitleView.getText().toString();
         Intent replyIntent = new Intent();
         replyIntent.putExtra(MessageActivity.EXTRA_REPLY, reply);
         setResult(RESULT_OK, replyIntent);
